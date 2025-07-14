@@ -1,6 +1,6 @@
 import { Agent } from "@mastra/core/agent";
 import { model } from "../../config";
-import { yourTool } from "../your-agent/your-tool";
+import { CheckOrders, TradeExecutor, VWAPTool } from "../your-agent/your-tool";
 
 // Define Agent Name
 const name = "Your Agent";
@@ -10,7 +10,8 @@ const name = "Your Agent";
 // TODO: Remove comments (// ...) from `instructions`
 const instructions = `
       // Define the character of the agent.
-      You are a helpful assistant that provides accurate information.
+      You are a helpful assistant that can trade cryptocurrency with algorithmic
+      strategies.
 
       // Define how the agent should behave here.
       Your primary function is to help users get accurate details for specific topics. When responding:
@@ -25,5 +26,5 @@ export const yourAgent = new Agent({
 	name,
 	instructions,
 	model,
-	tools: { yourTool },
+	tools: { CheckOrders, TradeExecutor, VWAPTool },
 });
