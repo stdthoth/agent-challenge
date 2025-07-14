@@ -29,7 +29,9 @@
     "@mastra/memory": "^0.10.3",
     "dotenv": "^16.5.0",
     "ollama-ai-provider": "^1.2.0",
-    "zod": "^3.25.67"
+    "zod": "^3.25.67",
+    "@nktkas/hyperliquid": "^0.22.1",
+    "viem": "^2.31.7"
   },
   "devDependencies": {
     "@biomejs/biome": "2.0.4",
